@@ -18,6 +18,7 @@ and removed unnecessary ports.
 Initialization is required once before running:
 
 ```sh
+echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 docker-compose up airflow-init
 ```
 
